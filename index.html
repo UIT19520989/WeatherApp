@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WFT</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+  <body>
+    <div class="col-12 d-flex" id="main">
+      <div class="col-4 p-4">
+        <div class="header">
+          <div
+            class="search d-flex justify-content-around align-items-center p-2"
+          >
+            <button class="border-0 btnSearch">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <input
+              type="text"
+              value=""
+              placeholder="Search for place"
+              class="border-0 col-10 searchInput"
+            />
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+        </div>
+        <div class="detail px-5">
+          <img
+            src="assets/partly_cloudy.png"
+            class="w-100 iconWeatherMain"
+            alt="partly_cloudy"
+          />
+          <div class="temp d-flex justify-content-center">
+            <h2 class="tempDetail">12</h2>
+            <p class="degree">°C</p>
+          </div>
+          <div class="loca d-flex justify-content-between fs-5 my-3">
+            <span class="location fw-bold">Paris</span>
+            <span class="dayOfWeek">Monday, May 3</span>
+          </div>
+          <div class="weather border-top py-3">
+            <i class="fa-solid fa-cloud"></i>
+            <span class="describeWeather">Patchy Drizzle Day</span>
+          </div>
+          <div>
+            <i class="fa-regular fa-clock"></i>
+            <span class="hour">16:30</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-8 p-4 pb-0" id="content">
+        <div class="header d-flex justify-content-between align-items-center">
+          <div class="name fw-bold fs-3">WHETHERSA</div>
+          <div class="option d-flex justify-content-between align-items-center">
+            <button class="btnOption btnC shadow bg-primary text-white">
+              °C
+            </button>
+            <button class="btnOption btnF shadow">°F</button>
+            <button class="btnOption shadow">
+              <i class="fa-regular fa-moon"></i>
+            </button>
+            <button class="btnOption shadow">
+              <i class="fa-solid fa-chart-line"></i>
+            </button>
+          </div>
+        </div>
+        <div class="weatherFuture">
+          <ul class="d-flex m-0">
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+            <li class="weatherDay d-flex flex-column">
+              <p class="fw-semibold">Tue</p>
+              <img src="assets/cloudy.png" alt="cloudy" />
+              <div class="tempWeather mt-2">
+                <span class="fw-bold">12°</span>
+                <span class="fw-normal">2°</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="todayHightlights">
+          <p class="fw-bold fs-5">Today's Highlights</p>
+          <div class="hightlights">
+            <ul class="d-flex mb-0">
+              <li class="hightlight">
+                <span class="tit">UV Index</span>
+                <div class="detail d-flex flex-column align-items-center">
+                  <img src="assets/uv.png" alt="uv" class="my-2" />
+                  <span class="my-3 fw-bold uvIndex">4</span>
+                </div>
+              </li>
+              <li class="hightlight">
+                <span class="tit">Wind Status</span>
+                <div class="detail d-flex flex-column align-items-center">
+                  <div class="windDetail d-flex my-4">
+                    <span class="fw-bold fs-1 windStatus">7.70 </span>
+                    <span class="fs-4 mx-2">km/h</span>
+                  </div>
+                  <i class="fa-solid fa-wind my-3"></i>
+                </div>
+              </li>
+              <li class="hightlight">
+                <span class="tit">Sunrise & Sunset</span>
+                <div class="detail d-flex flex-column align-items-center">
+                  <div class="my-4 d-flex align-items-center">
+                    <i class="fa-solid fa-sun iconSun"></i>
+                    <div class="info d-flex flex-column mx-3">
+                      <span class="sunrise">06:30 AM</span>
+                    </div>
+                  </div>
+                  <div class="mb-4 d-flex align-items-center">
+                    <i class="fa-solid fa-moon iconMoon"></i>
+                    <div class="info d-flex flex-column mx-3">
+                      <span class="sunset">06:30 AM</span>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="d-flex mt-0">
+              <li class="hightlight">
+                <span class="tit">Humidity</span>
+                <div class="detail d-flex flex-column align-items-center">
+                  <div class="windDetail d-flex my-4">
+                    <span class="fw-bold fs-1 humidity">12</span>
+                    <span class="fs-4 mx-2">%</span>
+                  </div>
+                  <i class="fa-solid fa-droplet my-3"></i>
+                </div>
+              </li>
+              <li class="hightlight">
+                <span class="tit">Visibility</span>
+                <div class="detail d-flex flex-column align-items-center">
+                  <div class="windDetail d-flex my-4">
+                    <span class="fw-bold fs-1 visibility">5.2</span>
+                    <span class="fs-4 mx-2">km</span>
+                  </div>
+                  <i class="fa-solid fa-eye my-3"></i>
+                </div>
+              </li>
+              <li class="hightlight">
+                <span class="tit">Air Quality</span>
+                <div class="detail d-flex flex-column align-items-center">
+                  <div class="windDetail d-flex my-4">
+                    <span class="fw-bold fs-1 airQuality">105</span>
+                  </div>
+                  <i class="fa-solid fa-lungs my-3"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-seemore">
+      <div class="modal-container">
+        <div class="modal-close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <header class="modal-header bg-primary">
+          <i class="fa-solid fa-cloud-sun icon-header"></i>
+          Temperature by hour
+        </header>
+        <canvas id="tempChart" style="width: 100%" class="p-4"></canvas>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
