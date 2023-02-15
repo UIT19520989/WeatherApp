@@ -46,11 +46,11 @@ let myAPI = "";
 function handleSearch() {
   const value = valueInput.value;
   if (value) {
-    myAPI = `http://api.weatherapi.com/v1/forecast.json?key=afc9a0553a954615a5731105230802&q=${value.toUpperCase()}&days=10&aqi=yes&alerts=no`;
+    myAPI = `https://api.weatherapi.com/v1/forecast.json?key=afc9a0553a954615a5731105230802&q=${value.toUpperCase()}&days=10&aqi=yes&alerts=no`;
     valueInput.value = "";
   } else {
     myAPI =
-      "http://api.weatherapi.com/v1/forecast.json?key=afc9a0553a954615a5731105230802&q=Hanoi&days=10&aqi=yes&alerts=no";
+      "https://api.weatherapi.com/v1/forecast.json?key=afc9a0553a954615a5731105230802&q=Hanoi&days=10&aqi=yes&alerts=no";
 
     valueInput.value = "";
   }
